@@ -1,0 +1,13 @@
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\bin\Debug\41manager.exe.config
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\bin\Debug\41manager.exe
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\bin\Debug\41manager.pdb
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager.csprojResolveAssemblyReference.cache
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\MainWindow.baml
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\MainWindow.g.cs
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\App.g.cs
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager_MarkupCompile.cache
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager.g.resources
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\_41manager.Properties.Resources.resources
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager.csproj.GenerateResource.Cache
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager.exe
+D:\IMIBU新的文档\CS New Heaven\41manager\41manager\obj\Debug\41manager.pdb

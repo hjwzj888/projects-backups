@@ -1,0 +1,90 @@
+﻿<Window x:Class="SPL_OPT_with_IBEAs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid Name="screen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="100,100,100,100" Grid.Column="0">
+            <Canvas Name="coordinates" Background="Gray"/>
+            <Label Content="f1" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="20" Margin="0,0,-33,-27"/>
+            <Label Content="f2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="-28,-31,0,0"/>
+            <Rectangle Fill="Black" HorizontalAlignment="Stretch" Height="5" VerticalAlignment="Bottom" />
+            <Rectangle Fill="Black" HorizontalAlignment="Left" Width="5" VerticalAlignment="Stretch" />
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="x1" Content="x1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="0" Grid.Row="5" Margin="16,0,17,-35"/>
+                <Label x:Name="x2" Content="x2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="1" Grid.Row="5" Margin="0,0,0,-35"/>
+                <Label x:Name="x3" Content="x3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="2" Grid.Row="5" Margin="0,0,0,-35"/>
+                <Label x:Name="x4" Content="x4" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="3" Grid.Row="5" Margin="0,0,0,-35"/>
+                <Label x:Name="x5" Content="x5" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="4" Grid.Row="5" Margin="0,0,0,-35"/>
+                <Label x:Name="x6" Content="x6" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Grid.Column="5" Grid.Row="5" Margin="0,0,0,-35"/>
+                <Label x:Name="y1" Content="y1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="5" Margin="-55,0,0,0"/>
+                <Label x:Name="y2" Content="y2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="4" Margin="-55,0,0,0"/>
+                <Label x:Name="y3" Content="y3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="3" Margin="-55,0,0,0"/>
+                <Label x:Name="y4" Content="y4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="2" Margin="-55,0,0,0"/>
+                <Label x:Name="y5" Content="y5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="1" Margin="-55,0,0,0"/>
+                <Label x:Name="y6" Content="y6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Margin="-55,14,0,14"/>
+            </Grid>
+
+        </Grid>
+        <Canvas Grid.Column="1" Height="300" VerticalAlignment="Center">
+            <Label Content="Function 1" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Canvas.Left="32" Canvas.Top="43"/>
+            <Label Content="Function 2" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Canvas.Left="32" Canvas.Top="134"/>
+            <Label Content="From" Canvas.Left="32" Canvas.Top="70"/>
+            <TextBox x:Name="f1From" Height="21" Canvas.Left="90" TextWrapping="Wrap" Text="200" Canvas.Top="73" Width="56"/>
+            <Label Content="Interval" Canvas.Left="32" Canvas.Top="95"/>
+            <TextBox x:Name="f1Interval" Height="21" Canvas.Left="90" TextWrapping="Wrap" Text="500" Canvas.Top="97" Width="56"/>
+            <Label Content="From" Canvas.Left="32" Canvas.Top="157"/>
+            <Label Content="Interval" Canvas.Left="32" Canvas.Top="180"/>
+            <TextBox x:Name="f2Interval" Height="21" Canvas.Left="90" TextWrapping="Wrap" Text="500" Canvas.Top="184" Width="56"/>
+            <TextBox x:Name="f2From" Height="21" Canvas.Left="90" TextWrapping="Wrap" Text="200" Canvas.Top="161" Width="56"/>
+            <Button Content="Set" Canvas.Left="54" Canvas.Top="254" Width="75" Click="SetCoordinates"/>
+        </Canvas>
+
+        <Canvas Grid.Column="2" Height="400" VerticalAlignment="Center" Margin="0,84,0,85">
+            <TextBox Name="mutationRateBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="0.05" VerticalAlignment="Top" Width="81" Canvas.Left="39" Canvas.Top="57" TextChanged="mutationRateBox_TextChanged"/>
+            <TextBox Name="crossoverRateBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="0.7" VerticalAlignment="Top" Width="81" Canvas.Left="172" Canvas.Top="57"/>
+            <TextBox Name="leftPointBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81" Canvas.Left="39" Canvas.Top="122"/>
+            <TextBox Name="rightPointBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81" Canvas.Left="172" Canvas.Top="122"/>
+            <TextBox Name="PSizeBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="81" Canvas.Left="39" Canvas.Top="194"/>
+            <TextBox Name="QSizeBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="81" Canvas.Left="172" Canvas.Top="194"/>
+            <TextBox Name="maxGenerationBox" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="81" Canvas.Left="39" Canvas.Top="261"/>
+            <Label Content="Mutation Rate" Canvas.Left="39" Canvas.Top="27"/>
+            <Label Content="Crossover Rate" Canvas.Left="172" Canvas.Top="27"/>
+            <Label Content="Left point" Canvas.Left="39" Canvas.Top="92"/>
+            <Label Content="Right point" Canvas.Left="172" Canvas.Top="92"/>
+            <Label Content="Size of popP" Canvas.Left="39" Canvas.Top="164"/>
+            <Label Content="Size of popQ" Canvas.Left="172" Canvas.Top="164"/>
+            <Label Content="Max generation" Canvas.Left="39" Canvas.Top="231"/>
+            <Button Name="startButton" Content="Start" Canvas.Left="56" Canvas.Top="316" Width="75" Click="StartIBEA" IsEnabled="False"/>
+            <Button Content="Set" Canvas.Left="171" Canvas.Top="349" Width="75" Click="SetIBEA"/>
+            <Button Name="nextButton" Content="Next" Canvas.Left="56" Canvas.Top="349" Width="75" Click="NextGeneration" IsEnabled="False"/>
+            <Button Name="exactButton" Content="Exactly!" Canvas.Left="171" Canvas.Top="316" Width="75" Click="FindExactParetoFront" IsEnabled="False"/>
+        </Canvas>
+        <Button Content="TEST" HorizontalAlignment="Left" Margin="71,48,0,0" VerticalAlignment="Top" Width="76"
+                Click="TestEvent"/>
+        <Button Content="FeatureModel Generator" HorizontalAlignment="Left" Margin="199,20,0,0" VerticalAlignment="Top" Width="164"
+        	Click="OpenFetureModelGenerator"  Height="47"/>
+
+
+    </Grid>
+</Window>

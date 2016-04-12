@@ -1,0 +1,31 @@
+﻿<Window x:Class="SPL_OPT_with_IBEAs.FeatureModel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FeatureModel" Height="300" Width="868" Background="Transparent" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Canvas MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
+        <Rectangle Width="138" Height="122" Canvas.Left="162" Canvas.Top="76" Stroke="White">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D3629" Offset="0"/>
+                    <GradientStop Color="#FFAE7758" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="20"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Button Content="生成" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Click="Button_Click" Height="22" Canvas.Left="174" Canvas.Top="161" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <Label Foreground="White" Content="最大节点数" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="169" Canvas.Top="95"/>
+        <TextBox Name="max" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="38" Canvas.Left="245" Canvas.Top="96"/>
+        <Image Source="Image/1.png" Canvas.Top="20" Height="244" Width="143" Canvas.Left="22"/>
+        <TextBox x:Name="constraint" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="38" Canvas.Left="245" Canvas.Top="124"/>
+        <Label Foreground="White" Content="约束条件数" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="169" Canvas.Top="120"/>
+        <Button Content="退出" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Click="Close_Click" Height="22" Canvas.Left="237" Canvas.Top="161" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <Image Source="Image/sample.png" Canvas.Top="-97" Height="486" Width="413" Canvas.Left="389">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="20"/>
+            </Image.Effect>
+        </Image>
+        <Button Content="就用它了~" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Click="Button_Click_1" Height="28" Canvas.Left="446" Canvas.Top="133" Background="White" BorderBrush="Black" Foreground="Black"/>
+    </Canvas>
+</Window>
