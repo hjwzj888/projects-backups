@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center|center_horizontal|center_vertical" 
+    android:orientation="vertical" >
+    
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center|center_horizontal|center_vertical" 
+    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/text1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="120dp"
+	        android:ems="10"
+	        android:gravity="center_horizontal"
+	        android:text="total step"
+	        android:textColor="#FFFFFF"
+	        android:textSize="30dp" />
+	    
+	    <ImageView
+	         android:id="@+id/imageRank"
+	         android:layout_width="90dp"
+	         android:layout_height="90dp"
+	         android:src="@drawable/card_back" />
+	    
+	    <TextView
+	        android:id="@+id/textRank"
+	        android:layout_width="wrap_content"
+	        android:layout_height="120dp"
+	        android:ems="10"
+	        android:text="total step"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15dp" />
+	    
+	    <Button
+	        android:id="@+id/btn"
+	        style="@drawable/button_card"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_style"
+	        android:onClick="onClick123"
+	        android:text="Play again" />
+	</LinearLayout>    
+</RelativeLayout>
